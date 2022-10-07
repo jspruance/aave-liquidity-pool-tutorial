@@ -1,13 +1,20 @@
-# Sample Hardhat Project
+# Aave Liquidity Pool Tutorial
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Learn how to supply tokens to the Aave liquidity pool and earn interest in the form of passive income on your investment. We explore how to add and remove liquidity from both the UI and smart contract code. Topics covered include Aave liquidity market protocol, DeFi liquidity pools, aTokens (equity tokens), and more.
 
-Try running some of the following tasks:
+LINK address (Goerli):
+0x07C725d58437504CA5f814AE406e70E21C5e8e9e
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+aLINK address (Goerli):
+0x6A639d29454287B3cBB632Aa9f93bfB89E3fd18f
+
+Deployed contract (Goerli):
+0x903dB4fDBfDd12E2e61b20F5f0eb65b8925D0195
+
+Deploy smart contract (Goerli):
+npx hardhat run --network goerli scripts/deployMarketInteractions.js
+
+Remix imports:
+import {IPool} from "https://github.com/aave/aave-v3-core/blob/master/contracts/interfaces/IPool.sol";
+import {IPoolAddressesProvider} from "https://github.com/aave/aave-v3-core/blob/master/contracts/interfaces/IPoolAddressesProvider.sol";
+import {IERC20} from "https://github.com/aave/aave-v3-core/blob/master/contracts/dependencies/openzeppelin/contracts/IERC20.sol";
